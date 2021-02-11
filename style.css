@@ -1,0 +1,798 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: #1C1C1C;
+}
+
+
+
+/*Homepage*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.logo-nav{
+    background-image: url("logo2.png");
+    margin-left: -50px;
+    margin-right: 50px;
+}
+
+.logo-nav img{
+    width: 40px; 
+    height: 40px;
+}
+
+.logo-nav a{
+    transition: 0.2s linear;
+}
+
+.logo-nav a:hover{
+    opacity: 0.50;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s linear;
+}
+
+.nav-links a:hover{
+    color: #0088a9;
+}
+
+.NavLinks-Lines{
+    display: none;
+}
+
+.lines3NAV{
+    display: none;
+    cursor: pointer;
+}
+
+.lines3NAV div{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+.container-laptop{
+    background: url("Laptop/LaptopModels-Home.png");
+    background-size: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-top: 100px;
+    margin-bottom: 300px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-laptop{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    display: block;
+
+}
+
+.subheader-laptop{
+    text-align: center;
+    margin: 0 0 0 0;
+    display: block;
+}
+
+.subheader-laptop a{
+	text-decoration: none;
+    color: #00bfff;
+    font-size: 25px;
+}
+
+.subheader-laptop a:hover{
+    text-decoration: underline;
+}
+
+
+
+.container-phone{
+    background: url("Phone/Phone-Home.png");
+    background-size: 70%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-bottom: 300px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-phone{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    display: block;
+}
+
+.subheader-phone{
+    text-align: center;
+    margin: 0 0 0 0;
+    display: block;
+}
+
+.subheader-phone a{
+    text-decoration: none;
+    color: #00bfff;
+    font-size: 25px;
+}
+
+.subheader-phone a:hover{
+    text-decoration: underline;
+}
+
+
+
+.container-watch{
+    background: url("Watch/Watch-Home.png");
+    background-size: 70%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-bottom: 300px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-watch{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0 0 0;
+    display: block;
+}
+
+.subheader-watch{
+    text-align: center;
+    margin: 0 0 0 0;
+    display: block;
+}
+
+.subheader-watch a{
+    text-decoration: none;
+    color: #00bfff;
+    font-size: 25px;
+}
+
+.subheader-watch a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*Laptop Site*/
+.LeafMint-Title{
+    margin: 60px 0 0 0;
+    color: #4d4d4d;
+    font-size: 30px;
+    text-align: center;
+    animation: slide_up 2.5s;
+}
+
+.LeafMint-SubTitle{
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 50px;
+    text-align: center;
+    animation: slide_up 3.5s;
+}
+
+.LeafMint-Image{
+    margin: 20px auto 0 auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+    animation: fade 5.5s;
+}
+
+
+
+.display{
+    text-align: center;
+    margin: 300px 0 0 0;
+}
+
+.Specifications-Details-Last{
+    margin: 0;
+    display: block;
+    padding: 0 0 40px 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 30px;
+    position: relative;
+}
+
+.Specifications-Details{
+    margin: 0;
+    display: block;
+    padding: 0 0 40px 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 30px;
+    position: relative;
+}
+
+.Specifications-Details::after{
+    position: absolute;
+    content: '';
+    display: block;
+    margin-top: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.25);
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.Laptop-Models{
+	margin: 200px auto 0 auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+}
+
+
+
+.Aluminum-Title{
+    margin: 200px 0 0 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 50px;
+    text-align: center;
+}
+
+.Aluminum-SubTitle{
+    margin-top: 10px;
+    padding: 0 0 0 0;
+    color: #4d4d4d;
+    font-size: 20px;
+}
+
+.Aluminum-Image{
+	margin: 100px auto 0 auto;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.LM-Colors-Title{
+    margin: 0 0 0 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 50px;
+    text-align: center;
+}
+
+.LaptopModels-Colors{
+    margin: 50px 7.5% 0 auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+}
+
+.button-justgray{
+    margin-top: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 15px #0d0d0d;
+}
+
+.button-justgray-changed{
+    margin-top: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 15px #80bfff;
+}
+
+.button-icegray{
+    margin-top: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 15px #0d0d0d;
+}
+
+.button-icegray-changed{
+    margin-top: 50px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 15px #80bfff;
+}
+
+
+
+.WindowsB-Title{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 30px;
+    text-align: center;
+}
+
+.WindowsB-SubTitle{
+    padding: 10px 0 0 0;
+    font-size: 20px;
+    color: #808080;
+}
+
+.background-windows{
+    padding: 60px 0 500px 0;
+    margin: 200px 0 200px 0;
+    background: url("Laptop/Windows-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.intro{
+    margin-bottom: 200px;
+}
+
+.intro h2{
+    text-align: center;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.65);
+    padding: 100px 0 100px 0;
+}
+
+.intro h2::before{
+    content: "Leaf";
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.intro h2::after{
+    content: "Mint";
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.intro video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*Phone and Watch Site*/
+.PhoneWatchTitle{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    font-size: 500px;
+    letter-spacing: 10px;
+    color: #4d4d4d;
+    opacity: 0.5;
+}
+
+.PhoneWatchVideo{
+    margin: 100px auto 100px auto;
+    width: 80%;
+    height: 80%;
+    display: block;
+    animation: fade 2s;
+}
+
+
+
+/*Footer*/
+.footer{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+}
+
+.footer_text{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 30px 0 30px 0;
+}
+
+
+
+/*Media Queries*/
+@media (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px){
+    /*Homepage*/
+     .logo-nav{
+        margin: 0 0 0 0;
+    }
+
+    .logo-nav img{
+        width: 30px; 
+        height: 30px;
+    }
+
+    .nav-links{
+        position: absolute;
+        height: 0vh;
+        top: 6vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: height 0.5s ease-in;
+        z-index: 10000;
+    }
+    
+    .nav-links li{
+        opacity: 0;
+        transform: translateY(-100px);
+        z-index: 10000;
+    }
+
+    .nav-links a{
+        font-size: 13px;
+    }
+
+    .NavLinks-Lines{
+        content: '';
+        display: block;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        width: 30%;
+        opacity: 0;
+    }
+
+    .lines3NAV{
+        display: block;
+        position: absolute;
+        right: 5%;
+        z-index: 10000;
+    }
+
+
+
+    .container-laptop{
+        background-size: 100%;
+        min-height: 35%;
+        background-position: center center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .header-laptop{
+        font-size: 25px;
+        padding: 10px 0 0 0;
+    }
+
+    .subheader-laptop a{
+        font-size: 15px;
+    }
+
+
+
+    .container-phone{
+        background-size: 100%;
+        min-height: 35%;
+        background-position: center 150%;
+        margin-bottom: 100px;
+    }
+
+    .header-phone{
+        font-size: 25px;
+        padding: 10px 0 0 0;
+    }
+
+    .subheader-phone a{
+        font-size: 15px;
+    }
+
+
+
+    .container-watch{
+        background-size: 100%;
+        min-height: 35%;
+        background-position: center 150%;
+        margin-bottom: 100px;
+    }
+
+    .header-watch{
+        font-size: 25px;
+        padding: 10px 0 0 0;
+    }
+
+    .subheader-watch a{
+        font-size: 15px;
+    }
+
+
+
+    /*Laptop Site*/
+    .LeafMint-Title{
+        font-size: 20px;
+    }
+
+    .LeafMint-SubTitle{
+        font-size: 20px;
+    }
+
+    .LeafMint-Image{
+        width: 90%;
+    }
+
+
+
+    .display{
+        margin: 200px 0 0 0;
+    }
+
+
+
+    .Specifications-Details-Last{
+        font-size: 15px;
+    }
+
+    .Specifications-Details{
+        font-size: 15px;
+    }
+
+    .Specifications-Details::after{
+        width: 60%;
+    }
+
+
+
+    .Laptop-Models{
+        margin: 100px auto 0 auto;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 220px;
+    }
+
+
+
+    .Aluminum-Title{
+        margin: 0 0 0 0;
+        font-size: 20px;
+    }
+
+    .Aluminum-SubTitle{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .Aluminum-Image{
+        margin: 50px auto 0 auto;
+        width: 80%;
+    }
+
+
+
+    .LM-Colors-Title{
+        font-size: 30px;
+    }
+
+    .LaptopModels-Colors{
+        margin: 60px 2.5% 0 auto;
+        width: 90%;
+    }
+
+    .button-justgray{
+        margin-top: 20px;
+        left: 35%;
+    }
+
+    .button-justgray-changed{
+        margin-top: 20px;
+        left: 35%;
+    }
+
+    .button-icegray{
+        margin-top: 20px;
+        left: 65%;
+    }
+
+    .button-icegray-changed{
+        margin-top: 20px;
+        left: 65%;
+    }
+
+
+
+    .WindowsB-Title{
+        font-size: 15px;
+        padding: 10px 30px 0 30px;
+    }
+
+    .WindowsB-SubTitle{
+        font-size: 12px;
+        padding: 10px 30px 0 30px;
+    }
+
+    .background-windows{
+        padding: 10px 0 250px 0;
+    }
+
+
+
+    .intro{
+        margin-bottom: 200px;
+    }
+
+    .intro h2{
+        font-size: 50px;
+        padding: 200px 0 50px 0;
+    }
+
+    .intro h2::before{
+        font-size: 20px;
+    }
+
+    .intro h2::after{
+        font-size: 20px;
+    }
+
+
+
+    /*Phone and Watch Site*/
+    .PhoneWatchTitle{
+        font-size: 100px;
+    }
+
+    .PhoneWatchVideo{
+        display: block;
+        margin: 100px auto 100px auto;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+
+
+    /*Footer*/
+    .footer_text{
+        font-size: 13px;
+    }
+}
+
+
+
+/*Animations*/
+@keyframes slide_up{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    25%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px, -6px);
+}
+
+.navACTIVE{
+    height: 40vh;
+    z-index: 10000;
+}

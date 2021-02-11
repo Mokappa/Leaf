@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="icon" type="image/png" href="../logos/leaf-title.png">
+	<title>Leaf</title>
+</head>
+
+<body>
+	<script> </script>
+
+	<nav>
+		<div class="logo-nav">
+			<a href="../index.html"><img src="../logos/leaf-logo.png"></a>
+		</div>
+
+		<ul class="nav-links">
+			<li>
+				<a href="#" style="color: #0088a9">Leaf Mint</a>
+			</li>
+
+			<div class="NavLinks-Lines"></div>
+
+			<li>
+				<a href="../Phone/Phone.html">Leaf Earl Grey</a>
+			</li>
+
+			<div class="NavLinks-Lines"></div>
+
+			<li>
+				<a href="../Watch/Watch.html">Timeleaf L1</a>
+			</li>
+		</ul>
+
+		<div class="lines3NAV">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+
+
+	<div>
+		<h1 class="LeafMint-Title"><b>Leaf Mint</b></h1>
+
+		<h2 class="LeafMint-SubTitle">
+			Strong. Elegant. Simple
+		</h2>
+
+		<img src="Laptop.png" class="LeafMint-Image">
+
+
+
+		<div class="display">
+			<h2 class="Specifications-Details">
+				8th Generation with 6 Cores<br>Intel Processor
+			</h2>
+
+			<h2 class="Specifications-Details">
+				Nvidia GTX 1060 6GB GDDR5<br>Graphics Card
+			</h2>
+
+			<h2 class="Specifications-Details">
+				Up to 32GB of DDR4<br>RAM
+			</h2>
+
+			<h2 class="Specifications-Details-Last">
+				4 USB-C Ports with high read<br>and write speeds
+			</h2>
+		</div>
+
+
+
+		<img src="LaptopModels.png" class="Laptop-Models">
+
+
+
+		<div class="display">
+			<h2 class="Aluminum-Title">
+				Highly-resistant aluminum<br>housing
+			</h2>
+
+			<h2 class="Aluminum-SubTitle">
+				The aluminum from which they are made is very resistant,<br>the unibody case of the laptop resisting shocks and scratches
+			</h2>
+		</div>
+
+		<img src="UpperLaptop.png" class="Aluminum-Image">
+
+
+
+		<div class="display">
+			<h2 class="LM-Colors-Title">
+				Colors
+			</h2>
+
+			<div class="button-justgray-changed" id="buttonJustGray" onclick="imagejustgray(); func1()"></div>
+
+			<div class="button-icegray" id="buttonIceGray" onclick="imageicegray(); func2()"></div>
+		</div>
+
+		<img src="Laptop-JustGray.png" class="LaptopModels-Colors" id="ChangedImage">
+
+
+
+		<div class="display background-windows">
+			<h2 class="WindowsB-Title">
+				Windows 10<br>Probably the best operating system available.
+			</h2>
+
+			<h2 class="WindowsB-SubTitle">
+				Life goes by fast, and with Windows 10 by your side, you can easily keep up. New computers give you<br>, on average, 28% faster start-up times, built-in security and the applications you like.
+			</h2>
+		</div>
+	</div>
+
+
+
+	<div class="intro">
+		<h2>Trailer</h2>
+
+		<video controls>
+			<source src="30secAnimation.mkv">
+		</video>
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="footer_text">
+			<h4>Copyright © 2018-2021 Leaf Inc. All rights reserved</h4>
+		</div>
+	</footer>
+
+
+
+	<script src="../app.js"></script>
+
+	<script type="text/javascript">
+		function imageicegray() {
+			var imagine = document.getElementById("ChangedImage");
+			imagine.src = "Laptop-IceGray.png";
+		}
+
+		function imagejustgray() {
+			var imagine = document.getElementById("ChangedImage");
+			imagine.src = "Laptop-JustGray.png";
+		}
+	</script>
+
+	<script type="text/javascript">
+		function func1() {
+			document.getElementById("buttonIceGray").className = "button-icegray";
+			document.getElementById("buttonJustGray").className = "button-justgray-changed";
+		}
+		
+		function func2() {
+			document.getElementById("buttonJustGray").className = "button-justgray";
+			document.getElementById("buttonIceGray").className = "button-icegray-changed";
+		}
+	</script>
+</body>
+
+</html>
