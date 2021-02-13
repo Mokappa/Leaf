@@ -132,7 +132,7 @@ nav{
 
 .container-phone{
     background: url("Phone/Phone-Home.png");
-    background-size: 70%;
+    background-size: 1400px;
     min-height: 100%;
     background-repeat: no-repeat;
     background-position: center 80%;
@@ -169,7 +169,7 @@ nav{
 
 .container-watch{
     background: url("Watch/Watch-Home.png");
-    background-size: 70%;
+    background-size: 1400px;
     min-height: 100%;
     background-repeat: no-repeat;
     background-position: center 100%;
@@ -550,7 +550,7 @@ nav{
 
 
     .container-phone{
-        background-size: 100%;
+        background-size: 450px;
         min-height: 35%;
         background-position: center 100%;
         margin-bottom: 100px;
@@ -568,7 +568,7 @@ nav{
 
 
     .container-watch{
-        background-size: 100%;
+        background-size: 450px;
         min-height: 35%;
         background-position: center 100%;
         margin-bottom: 100px;
