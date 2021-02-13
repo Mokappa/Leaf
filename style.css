@@ -532,7 +532,7 @@ nav{
 
     .container-laptop{
         background-size: 100%;
-        min-height: 35%;
+        min-height: 55%;
         background-position: center center;
         margin-top: 100px;
         margin-bottom: 100px;
@@ -550,8 +550,8 @@ nav{
 
 
     .container-phone{
-        background-size: 450px;
-        min-height: 35%;
+        background-size: 500px;
+        min-height: 55%;
         background-position: center 100%;
         margin-bottom: 100px;
     }
@@ -568,8 +568,8 @@ nav{
 
 
     .container-watch{
-        background-size: 450px;
-        min-height: 35%;
+        background-size: 500px;
+        min-height: 55%;
         background-position: center 100%;
         margin-bottom: 100px;
     }
